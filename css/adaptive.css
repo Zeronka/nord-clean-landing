@@ -1,0 +1,182 @@
+@media (max-width: 1100px) {
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .header-container {
+        height: 70px;
+    }
+
+    .burger {
+    display: block;
+    }
+
+    .nav {
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: 280px;
+        height: 100vh;
+
+        background: rgba(15,23,42,0.98);
+
+        backdrop-filter: blur(20px);
+
+        flex-direction: column;
+
+        align-items: start;
+
+        padding: 120px 40px;
+
+        transition: 0.4s ease;
+
+        z-index: 1100;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 120px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section-top {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .about-grid,
+    .services-grid,
+    .process-grid,
+    .advantages-grid,
+    .audience-grid,
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-wide {
+        grid-column: span 1;
+    }
+
+    .large-card {
+        grid-row: span 1;
+    }
+
+    .form-wrapper {
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .header-btn {
+        padding: 12px 18px;
+
+        font-size: 14px;
+
+        border-radius: 12px;
+    }
+    
+    .header-container {
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 16px;
+
+        line-height: 1.2;
+    }
+
+        .hero {
+        padding-top: 110px;
+    }
+
+    .hero-container {
+        gap: 30px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-note {
+        font-size: 14px;
+    }
+
+    .hero-card {
+        padding: 24px;
+    }
+
+    .btn {
+        width: fit-content;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-link {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .header-btn {
+        display: none;
+    }
+}
